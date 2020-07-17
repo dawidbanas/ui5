@@ -1,0 +1,40 @@
+<f:SimpleForm id="bpData" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4"
+				labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2" class="editableForm">
+				<f:content>
+					<core:Title text="{i18n>bpData}"/>
+					<Label text="{i18n>companyId}" />
+					<Input value="{/BusinessPartnerID}" editable="false"/>
+					<Label text="{i18n>companyName}" required="true" />
+					<Input value="{/CompanyName}" required="true"/>
+					<Label text="{i18n>webAddress}" required="true"/>
+					<Input value="{/WebAddress}" required="true"/>
+					<Label text="{i18n>emailAddress}" required="true"/>
+					<Input value="{/EmailAddress}" required="true"/>
+					<Label text="{i18n>phoneNumber}"/>
+					<Input value="{/PhoneNumber}"/>
+					<Label text="{i18n>faxNumber}"/>
+					<Input value="{/FaxNumber}"/>
+					
+				</f:content>
+			</f:SimpleForm>
+			
+			<f:SimpleForm id="bpAdress" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4"
+				labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2" class="editableForm">
+				<f:content>
+					<core:Title text="{i18n>bdAddress}"/>
+					<Label text="{i18n>city}" required="true"/>
+					<Input value="{/Address/City}" required="true"/>
+					<Label text="{i18n>postalCode}" required="true"/>
+					<Input value="{/Address/PostalCode}" required="true"/>
+					<Label text="{i18n>street}" required="true"/>
+					<Input value="{/Address/Street}" required="true"/>
+					<Label text="{i18n>building}" required="true"/>
+					<Input value="{/Address/Building}" required="true"/>
+					<Label text="{i18n>country}" required="true"/>
+					<Select selectedKey="{/Address/Country}" id="selectCountry">
+						<core:Item key="DE" text="{i18n>DE}" />
+						<core:Item key="PL" text="{i18n>PL}" />
+						<core:Item key="UK" text="{i18n>UK}" />
+					</Select>
+				</f:content>
+			</f:SimpleForm>
