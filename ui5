@@ -1,31 +1,3 @@
-var oView = this.getView();
-			var oData = {
-				BusinessPartnerID: "",
-				CompanyName: "",
-				WebAddress: "",
-				EmailAddress: "",
-				PhoneNumber: "",
-				FaxNumber: "",
-				CurrencyCode: "EUR",
-				BusinessPartnerRole: "02",
-				Address: {
-					City: "",
-					PostalCode: "",
-					Street: "",
-					Building: "",
-					Country: "",
-					AddressType: "02"
-				}
-			};
-			oView.setModel(new sap.ui.model.json.JSONModel(oData));
-
-
-
-
-
-
-
-
 <f:SimpleForm id="bpData" minWidth="1024" maxContainerCols="2" editable="true" layout="ResponsiveGridLayout" labelSpanL="4"
 				labelSpanM="4" emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2" class="editableForm">
 				<f:content>
@@ -66,4 +38,4 @@ var oView = this.getView();
 					</Select>
 				</f:content>
 			</f:SimpleForm>
-   sdas
+   
